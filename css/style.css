@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+}
+
+.span8 {
+    border: 1px solid black;
+    height: 2000px;
+}
+
+.span3 div {
+    border: 1px solid black;
+}
+
+#ad1 {
+    height: 300px;
+}
+#ad2 {
+    height: 400px;
+}
