@@ -21,7 +21,7 @@
             lastTop = $main.position().top + $main.height() - getHeights($elms, 0, nums - 1) - opts.paddingBottom;
         }, checkPositionType = function() {
             var positionType = "static";
-            if ($(document).height() > $wrapper.height() && ( $(window).height() > getHeights($elms, 0, nums - 1) || $(window).height() > minHeight )) {
+            if ($main.height() > $wrapper.height() && ( $(window).height() > getHeights($elms, 0, nums - 1) || $(window).height() > minHeight )) {
                 var e = window.pageYOffset || document.documentElement.scrollTop;
                 positionType = e < firstTop ? ("static") : (e < lastTop ? ("fixed") : ("absolute"));
             }
